@@ -14,7 +14,7 @@
 </head>
 <body>
 <header class="nav" id="nav">
-  <a href="#inicio" class="brand notranslate">LOGO</a>
+  <a href="#inicio" class="brand notranslate"><img src="assets/img/logo.png" alt="Nombre de la empresa"></a>
   <nav aria-label="Principal">
     <a href="#productos">Productos</a><a href="#nosotros">Nosotros</a><a href="#responsabilidad">Responsabilidad</a><a href="#contacto" class="btn-nav">Contacto</a>
   </nav>
@@ -110,8 +110,21 @@
   </div>
 </section>
 </main>
+<div class="gallery" id="gallery" role="dialog" aria-modal="true" aria-labelledby="gtitle" hidden>
+  <div class="g-box">
+    <button class="g-close" id="gclose" aria-label="Cerrar">×</button>
+    <div class="g-stage">
+      <button class="garrow" data-dir="-1" aria-label="Foto anterior">‹</button>
+      <div class="g-track" id="gtrack"></div>
+      <button class="garrow" data-dir="1" aria-label="Foto siguiente">›</button>
+    </div>
+    <div class="g-thumbs" id="gthumbs"></div>
+    <h3 id="gtitle"></h3>
+    <p id="gdesc"></p>
+  </div>
+</div>
 
-<footer class="foot"><span class="notranslate">© <span id="y"></span> LOGO</span><span>Hecho en Colombia</span></footer>
+<footer class="foot"><span class="notranslate">© <span id="y"></span><img src="assets/img/logo.png" alt="Nombre de la empresa"></span><span>Hecho en Colombia</span></footer>
 <div id="google_translate_element" hidden></div>
 <script src="js/products.js"></script>
 <script src="js/main.js"></script>
