@@ -58,7 +58,7 @@ h2{font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:1rem}
 .sec{padding:96px 0}.cream{background:var(--cream)}.blush{background:var(--blush)}
 .sec-head{max-width:46rem;margin-bottom:2rem}
 .sec-head h2{display:inline-block;background:var(--gold);color:#fff;padding:.05em .4em}
-.filters{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 36px}
+.filters{display:none;flex-wrap:wrap;gap:10px;margin:0 0 36px}
 .filters button{font:inherit;background:none;border:1px solid var(--tan);padding:5px 20px;border-radius:30px;cursor:pointer;transition:.3s}
 .filters button[aria-selected=true],.filters button:hover{background:var(--leather);border-color:var(--leather);color:#fff}
 .carousel{position:relative}
@@ -109,6 +109,10 @@ blockquote footer{font-size:.95rem;color:var(--leather)}
 .form input,.form textarea{font:inherit;padding:12px 14px;border:0;background:#fffe;color:var(--ink)}
 .form .btn{justify-self:start}
 .foot{display:flex;justify-content:space-between;padding:20px 28px;background:var(--ink);color:var(--blush);font-size:.95rem}
+.foot{align-items:center}
+.foot-brand{display:inline-flex;align-items:center;gap:8px}
+.foot-brand img{height:42px;width:auto}
+
 
 /* Reveal */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .9s,transform .9s}
