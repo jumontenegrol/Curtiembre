@@ -1,4 +1,4 @@
-:root{--tan:#C4A68B;--blush:#DDC3AE;--cream:#F5F0EB;--gold:#D9994A;--ink:#2B1D14;--leather:#6B3F26;
+:root{--tan:#B38F72;--blush:#DDC3AE;--cream:#F5F0EB;--gold:#D9994A;--ink:#2B1D14;--leather:#6B3F26;
 --font:"Cum Serif","Cormorant Garamond",Georgia,serif}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
@@ -151,3 +151,11 @@ body{top:0!important}
 .g-thumbs button{width:72px;height:72px;padding:0;border:2px solid transparent;opacity:.6;cursor:pointer;background:none}
 .g-thumbs button[aria-current=true]{border-color:var(--gold);opacity:1}
 .g-thumbs img{width:100%;height:100%;object-fit:cover}
+
+
+.why{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;counter-reset:w;margin-top:32px}
+.why li{border-top:2px solid var(--leather);padding-top:14px;counter-increment:w}
+.why li::before{content:"0" counter(w);display:block;font-size:2.2rem;color:var(--gold);line-height:1}
+.sectors{padding-left:1.2rem}.sectors li{margin-bottom:6px}
+.team{margin-top:36px;font-size:1rem;opacity:.9}
+.contact-cols .wa{margin-bottom:10px}

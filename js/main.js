@@ -57,7 +57,7 @@
   $('#y').textContent = new Date().getFullYear();
 
   /* Google Translate (ES por defecto → EN / FR) */
-  const m = document.cookie.match(/googtrans=\/es\/(\w+)/), cur = m ? m[1] : 'es';
+  const m = document.cookie.match(/googtrans=\/es\/([\w-]+)/), cur = m ? m[1] : 'es';
   document.querySelectorAll('.lang button').forEach(b => {
     b.setAttribute('aria-pressed', b.dataset.lang === cur);
     b.onclick = () => {
@@ -69,7 +69,7 @@
     };
   });
   if (cur !== 'es') {
-    window.googleTranslateElementInit = () => new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'es,en,fr', autoDisplay: false }, 'google_translate_element');
+    window.googleTranslateElementInit = () => new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'es,en,fr,zh-CN' , autoDisplay: false }, 'google_translate_element');
     const s = document.createElement('script');
     s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'; document.head.appendChild(s);
   }
