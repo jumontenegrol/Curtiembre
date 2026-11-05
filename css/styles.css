@@ -101,7 +101,7 @@ blockquote footer{font-size:.95rem;color:var(--leather)}
 
 /* Contact */
 .contact{position:relative;color:#fff;padding:110px 0 80px;overflow:hidden;background:var(--leather)}
-.contact-bg{position:absolute;inset:0;background:url(../assets/img/contacto.jpg) center/cover;opacity:.5}
+.contact-bg{position:absolute;inset:0;background:url center/cover;opacity:.5}
 .contact .wrap{position:relative}
 .contact-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin:44px 0}
 .contact h4{font-size:1.3rem;margin-bottom:4px}
